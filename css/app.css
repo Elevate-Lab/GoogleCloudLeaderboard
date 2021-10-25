@@ -15,6 +15,17 @@ body{
   font-size: 0.9rem;
 }
 
+
+
+
+body{
+  background: #fdfdfd;
+  font-family: 'Open Sans', sans-serif;
+  color: #4f546c;
+  overflow-x: hidden;
+  font-size: 0.9rem;
+}
+
 #tableRecord a {
   background-color:#08AD5D ;  
   border-radius: 5px;
@@ -416,5 +427,39 @@ li img {
   .footer-links{
     width: 100%;
   }
+
+  .paging-nav{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+  }
 }
+
+.paging-nav {
+  text-align: right;
+  padding-top: 2px;
+}
+
+.paging-nav a {
+  margin: auto 1px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1px 7px;
+  background: #a1bef0;
+  color: white;
+  border-radius: 3px;
+}
+
+.paging-nav .selected-page {
+  background: #4286F5;
+  font-weight: bold;
+}
+
+.paging-nav {
+  width: 400px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  margin-bottom: 25px;
+}
+
 
