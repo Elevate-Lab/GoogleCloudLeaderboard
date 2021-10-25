@@ -229,6 +229,7 @@ footer{
   display: flex;
   width: 50%;
   justify-content:space-between;
+  flex-wrap: wrap;
 }
 
 .footer-links h3, .footer-links h4{
@@ -396,7 +397,7 @@ li img {
     width: 80%;
   }
   th,td {
-    padding: 1.2rem 1.6rem;
+    padding: 1.2rem 0.8rem;
   }
   .top-footer{
     gap: 20px;
