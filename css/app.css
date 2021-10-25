@@ -1,6 +1,20 @@
-*{
-    font-family: 'Open Sans', sans-serif;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
 }
+
+body{
+  background: #fdfdfd;
+  font-family: 'Open Sans', sans-serif;
+  color: #4f546c;
+  overflow-x: hidden;
+  font-size: 0.9rem;
+}
+
 #tableRecord a {
   background-color:#08AD5D ;  
   border-radius: 5px;
@@ -14,144 +28,146 @@
   background-color: F#08AD5D;
   color: White;
 }
+
+
 header{
-    display: flex;
-    justify-content: space-between;
-    height :90px;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height :90px;
+  width:100%;
+  background: #ffffff;
+  box-shadow: 2px 2px 12px 1px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top :0;
+  z-index: 5;
 }
 
 .logo {
-   
-    margin-left: 30px;
-display: inline-block;
-margin-top: 18px;
-font-size: 25px;
-text-align: center;
+  margin-left: 35px;
+  display: inline-block;
+  margin-top: 10px;
+  width:25vw;
 }
 .logo img{
-    width: 359px;
-    height: 57px;
-}
-.menu{
-    display: block;
-    flex: 1;
-    max-width: 50%;
-    margin-top: 30px;
-    height: 60px;
+  width: 100%;
+  height: auto;
 }
 
+.menu{
+  display: block;
+  flex: 1;
+  max-width:75vw;
+  margin-top: 20px;
+  height: 60px;
+}
 .navbar{
-display: flex;
-justify-content: right;
-margin-right: 70px;
+  display: flex;
+  justify-content: right;
+  margin-right: 45px;
 }
 .navbar li{
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 4px;
-   
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 4px;
 }
 .navbar li a{
-    color: black;
-    list-style: none;
-    text-decoration: none;
-    padding: 22px;
+  color: black;
+  list-style: none;
+  text-decoration: none;
+  padding: 22px;
 }
 .navbar li a:hover {
  color: #156EFF;
  border-radius: 6px;
 }
+
+
 .container{
     display: flex;
     margin-top: 40px;
+    padding-top: 100px;
 }
 .body{
     max-width: 45%;
     margin-left: 100px;
-   
 }
 .bodyImage{
-    margin-top: 100px;
+    margin-top: 60px;
     margin-left: 30px;
 }
 .bodyImage img{
-    height: 263px;
+    height: auto;
     width: 564px;
 }
+.body h1{
+  font-weight: bold;
+  font-size: 2.8vw;
+  line-height: 4.2vw;                
+  color: #1B2733;
+}
 #para1{
-    margin-top: 10px;
-    margin-bottom: 75px;
+    margin-bottom: 80px;
+    font-weight: 600;
+    font-size: 1.11vw;
+    line-height: 1.53vw;                       
+    color: #637282;
 }
 #para2{
     margin-bottom: 30px;
 }
 
-body{
-    background: #f2f2f2;
-    font-family: 'Open Sans', sans-serif;
-  }
   
-  .search {
-    margin-top: 60px;
-    width: 100%;
-    margin-left: 1100px;
-    display: flex;
-  }
-  
-  .searchTerm {
-    width: 100%;
-    border: 3px solid #4286F5    ;
-    border-right: none;
-    padding: 5px;
-    height: 36px;
-    border-radius: 5px 0 0 5px;
-    outline: none;
-    color: #9DBFAF;
-  }
-  
-  .searchTerm:focus{
-    color: #4286F5    ;
-  }
-  
-  .searchButton {
-    width: 40px;
-    height: 36px;
-    border: 1px solid #4286F5    ;
-    background: #4286F5    ;
+.leaderBoard{
+  margin-top: 80px;
+}
+.leaderBoard h1{
     text-align: center;
-    color: #fff;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-    font-size: 20px;
-  }
+    font-weight: bold;
+    font-size: 2.4vw;
+    line-height: 4.2vw;                
+    color: #1B2733;
+}
+
+
   
-  /*Resize the wrap to see the search bar change!*/
-  .wrap{
-    width: 30%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 100%;
 }
 
-body {
-  font-family: Mukta, sans-serif;
-  height: 100vh;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  color: #4f546c;
-  font-size: 0.9rem;
-  background-color:#f9fbff ;
+.search {
+  margin:0 auto;
+  margin-top: 50px;
+  width: 40%;
+  display: flex;
 }
+.searchTerm {
+  width: 100%;
+  border: 3px solid #4286F5    ;
+  border-right: none;
+  padding: 5px;
+  height: 36px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+.searchTerm:focus{
+  color: #4286F5    ;
+}
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #4286F5    ;
+  background: #4286F5    ;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
 
 table {
   border-collapse: collapse;
@@ -159,28 +175,24 @@ table {
   background-color: white;
   text-align: left;
   overflow: hidden;
-  margin: 50px auto;
+  margin: 25px auto;
   width: 80%;
 }
 thead{
     box-shadow: 0 5px 10px #eeee;
 }
 
-  th {
-    padding: 1rem 2rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    font-size: 0.7rem;
-    font-weight: 900;
-  }
+th {
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 0.7rem;
+  font-weight: 900;
+  text-align: justify;
+}
 
-  td {
-    padding: 1rem 2rem;
-  }
-
-
-.leaderBoard h1{
-    text-align: center;
+td {
+  padding: 1rem 2rem;
 }
 
  
@@ -271,17 +283,93 @@ li i {
 }
 
 
-
+/* 
 @media screen and (max-width: 1275px) {
 	.footer-items {
 		width: 50%;
 	}
-}
+} */
 
 
 
-@media screen and (max-width: 660px) {
-	.footer-items {
+@media screen and (max-width: 850px) {
+  header{
+    padding-top:15px;
+    flex-direction: column;
+    height:auto;
+    position:static;
+  }
+  .logo{
+    width: 60%;
+    margin-left: 0;
+  }
+  .menu{
+    max-width:100%;
+    margin-top: 10px;
+  }
+  .navbar{
+    display: flex;
+    justify-content: space-around;
+    margin:0;
+    gap: 20px;
+  }
+  .navbar li{
+    font-size: 2.3vw;
+  }
+  .footer-items {
 		width: 100%;
 	}
+  .navbar li a{
+    text-align: center;
+    padding:15px
+  }
+  .container{
+    padding-top: 30px ;
+    flex-direction: column;
+    align-items: center;
+  }
+  .body{
+    max-width: 80%;
+    margin-left:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .body h1{
+    font-size: 5.2vw;
+    line-height: 150%;
+  }
+  .body #para1{
+    font-size: 2vw;
+    line-height: 180%;    
+    margin-bottom: 40px;                   
+  }
+  .body #para2{
+    text-align: justify;
+  }
+  .bodyImage{
+    margin: 0;
+    margin-top: 40px;
+    display: grid;
+    place-items: center;
+  }
+  .bodyImage img{
+    width: 80%;
+  }
+  .leaderBoard{
+    margin-top: 80px;
+  }
+  .leaderBoard h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 5vw;
+    line-height: 150%;                
+    color: #1B2733;
+  }
+  .search {
+    margin-top: 30px;
+    width: 60%;
+    display: flex;
+  }
 }
+
