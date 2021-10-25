@@ -15,6 +15,17 @@ body{
   font-size: 0.9rem;
 }
 
+
+
+
+body{
+  background: #fdfdfd;
+  font-family: 'Open Sans', sans-serif;
+  color: #4f546c;
+  overflow-x: hidden;
+  font-size: 0.9rem;
+}
+
 #tableRecord a {
   background-color:#08AD5D ;  
   border-radius: 5px;
@@ -416,6 +427,7 @@ li img {
   .footer-links{
     width: 100%;
   }
+
   .paging-nav{
     display: flex;
     justify-content: center;
@@ -449,3 +461,5 @@ li img {
   font-family: Arial, sans-serif;
   margin-bottom: 25px;
 }
+
+
