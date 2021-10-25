@@ -204,7 +204,7 @@ th {
   letter-spacing: 0.1rem;
   font-size: 0.7rem;
   font-weight: 900;
-  text-align: justify;
+  text-align: center;
 }
 
 th span{
@@ -252,7 +252,7 @@ footer{
 }
 
 .footer-img{
-  width:400px;
+  width:min(400px,100%);
   padding: 10px 20px;
   box-sizing: border-box;
 }
@@ -279,6 +279,8 @@ ul li {
 	height: 25px;
   width:max-content;
   vertical-align: middle;
+  display:flex;
+
 }
 li img {
   height: 24px;
@@ -294,6 +296,7 @@ li img {
   flex-wrap: wrap;
   align-content: flex-start;
   justify-content: space-between;
+  max-width: 30%;
 }
 
 .social-media a {
@@ -351,7 +354,7 @@ li img {
 	}
   .navbar li a{
     text-align: center;
-    padding:12px
+    padding:10px
   }
   .container{
     padding-top: 30px ;
@@ -405,7 +408,6 @@ li img {
     margin: 30px auto;
     width: 100%;
     overflow-x: scroll;
-
   }
   thead{
     box-shadow: 0 5px 10px #eeee;
